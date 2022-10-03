@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="RockPaperScissors.css">
+        <script src="RockPaperScissors.js"></script>
+    </head>
+    <body>
+        <div class="top_container">
+            <div class="score">
+                <h1 id="YourScore">Your Score</h1>
+                <p id="p1">Win:</p>
+                <p id="p2">Loss:</p>
+                <p id="p3">Draw:</p>
+            </div>
+            <div id="WinLoss">
+                <h1 id="h">You Win</h1>
+            </div>
+        </div>
+        <div class="imgs">
+            <img src="rock.png" alt="rock" onclick="GenerateOutcome(1)">
+            <img src="paper.png" alt="paper" onclick="GenerateOutcome(2)">
+            <img src="scissors.png" alt="scissors" onclick="GenerateOutcome(3)">
+        </div>
+        <div class="img_stack">
+            <div id="top_img"><img src="rock.png" alt="rock"></div>
+            <div id="middle_img"><img src="paper.png" alt="paper"></div>
+            <div id="bottom_img"><img src="scissors.png" alt="scissors"></div>
+        </div>
+        <p id="W" style="display: none;">0</p>
+        <p id="L" style="display: none;">0</p> 
+        <p id="D" style="display: none;">0</p>
+        <p id="R" style="display: none;">1</p>  
+    </body>
+</html>
